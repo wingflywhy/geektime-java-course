@@ -1,0 +1,158 @@
+(base) bjhl@MacBook-Pro-10:mina/classLoader ‹main*›$ javap -c -verbose  Hello
+警告: 二进制文件Hello包含com.mina.classLoader.Hello
+Classfile /Users/bjhl/IdeaProjects/geektime-java-course/geektime-java-course-web/src/main/java/com/mina/classLoader/Hello.class
+  Last modified 2021-6-26; size 1005 bytes
+  MD5 checksum b739cc12bdf7197da9a34fc6371e2504
+  Compiled from "Hello.java"
+public class com.mina.classLoader.Hello
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #21.#32        // java/lang/Object."<init>":()V
+   #2 = Double             2.0d
+   #4 = Long               3l
+   #6 = String             #33            //
+   #7 = Methodref          #34.#35        // java/lang/String.length:()I
+   #8 = Fieldref           #36.#37        // java/lang/System.out:Ljava/io/PrintStream;
+   #9 = Class              #38            // java/lang/StringBuilder
+  #10 = Methodref          #9.#32         // java/lang/StringBuilder."<init>":()V
+  #11 = String             #39            // 错误用法: num2 + num3 =
+  #12 = Methodref          #9.#40         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #13 = Methodref          #9.#41         // java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+  #14 = Methodref          #9.#42         // java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+  #15 = Methodref          #9.#43         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #16 = Methodref          #44.#45        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #17 = String             #46            // 四则运算: num1 * num4 =
+  #18 = Methodref          #44.#47        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #19 = Methodref          #44.#48        // java/io/PrintStream.println:(I)V
+  #20 = Class              #49            // com/mina/classLoader/Hello
+  #21 = Class              #50            // java/lang/Object
+  #22 = Utf8               <init>
+  #23 = Utf8               ()V
+  #24 = Utf8               Code
+  #25 = Utf8               LineNumberTable
+  #26 = Utf8               main
+  #27 = Utf8               ([Ljava/lang/String;)V
+  #28 = Utf8               StackMapTable
+  #29 = Class              #51            // "[Ljava/lang/String;"
+  #30 = Utf8               SourceFile
+  #31 = Utf8               Hello.java
+  #32 = NameAndType        #22:#23        // "<init>":()V
+  #33 = Utf8
+  #34 = Class              #52            // java/lang/String
+  #35 = NameAndType        #53:#54        // length:()I
+  #36 = Class              #55            // java/lang/System
+  #37 = NameAndType        #56:#57        // out:Ljava/io/PrintStream;
+  #38 = Utf8               java/lang/StringBuilder
+  #39 = Utf8               错误用法: num2 + num3 =
+  #40 = NameAndType        #58:#59        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #41 = NameAndType        #58:#60        // append:(D)Ljava/lang/StringBuilder;
+  #42 = NameAndType        #58:#61        // append:(J)Ljava/lang/StringBuilder;
+  #43 = NameAndType        #62:#63        // toString:()Ljava/lang/String;
+  #44 = Class              #64            // java/io/PrintStream
+  #45 = NameAndType        #65:#66        // println:(Ljava/lang/String;)V
+  #46 = Utf8               四则运算: num1 * num4 =
+  #47 = NameAndType        #67:#66        // print:(Ljava/lang/String;)V
+  #48 = NameAndType        #65:#68        // println:(I)V
+  #49 = Utf8               com/mina/classLoader/Hello
+  #50 = Utf8               java/lang/Object
+  #51 = Utf8               [Ljava/lang/String;
+  #52 = Utf8               java/lang/String
+  #53 = Utf8               length
+  #54 = Utf8               ()I
+  #55 = Utf8               java/lang/System
+  #56 = Utf8               out
+  #57 = Utf8               Ljava/io/PrintStream;
+  #58 = Utf8               append
+  #59 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #60 = Utf8               (D)Ljava/lang/StringBuilder;
+  #61 = Utf8               (J)Ljava/lang/StringBuilder;
+  #62 = Utf8               toString
+  #63 = Utf8               ()Ljava/lang/String;
+  #64 = Utf8               java/io/PrintStream
+  #65 = Utf8               println
+  #66 = Utf8               (Ljava/lang/String;)V
+  #67 = Utf8               print
+  #68 = Utf8               (I)V
+{
+  public com.mina.classLoader.Hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=8, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: ldc2_w        #2                  // double 2.0d
+         5: dstore_2
+         6: ldc2_w        #4                  // long 3l
+         9: lstore        4
+        11: iconst_4
+        12: istore        6
+        14: ldc           #6                  // String
+        16: invokevirtual #7                  // Method java/lang/String.length:()I
+        19: bipush        10
+        21: if_icmpge     54
+        24: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        27: new           #9                  // class java/lang/StringBuilder
+        30: dup
+        31: invokespecial #10                 // Method java/lang/StringBuilder."<init>":()V
+        34: ldc           #11                 // String 错误用法: num2 + num3 =
+        36: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        39: dload_2
+        40: invokevirtual #13                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+        43: lload         4
+        45: invokevirtual #14                 // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+        48: invokevirtual #15                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        51: invokevirtual #16                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        54: iconst_0
+        55: istore        7
+        57: iload         7
+        59: iload_1
+        60: if_icmpge     87
+        63: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        66: ldc           #17                 // String 四则运算: num1 * num4 =
+        68: invokevirtual #18                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        71: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        74: iload_1
+        75: iload         6
+        77: imul
+        78: invokevirtual #19                 // Method java/io/PrintStream.println:(I)V
+        81: iinc          7, 1
+        84: goto          57
+        87: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 2
+        line 13: 6
+        line 14: 11
+        line 15: 14
+        line 17: 24
+        line 19: 54
+        line 21: 63
+        line 22: 71
+        line 19: 81
+        line 24: 87
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 54
+          locals = [ class "[Ljava/lang/String;", int, double, long, int ]
+          stack = []
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 29
+}
+SourceFile: "Hello.java"

@@ -1,0 +1,53 @@
+(base) bjhl@MacBook-Pro-10:mina/classLoader ‹main*›$ javap -c Hello
+警告: 二进制文件Hello包含com.mina.classLoader.Hello
+Compiled from "Hello.java"
+public class com.mina.classLoader.Hello {
+  public com.mina.classLoader.Hello();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_1
+       1: istore_1
+       2: ldc2_w        #2                  // double 2.0d
+       5: dstore_2
+       6: ldc2_w        #4                  // long 3l
+       9: lstore        4
+      11: iconst_4
+      12: istore        6
+      14: ldc           #6                  // String
+      16: invokevirtual #7                  // Method java/lang/String.length:()I
+      19: bipush        10
+      21: if_icmpge     54
+      24: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      27: new           #9                  // class java/lang/StringBuilder
+      30: dup
+      31: invokespecial #10                 // Method java/lang/StringBuilder."<init>":()V
+      34: ldc           #11                 // String 错误用法: num2 + num3 =
+      36: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      39: dload_2
+      40: invokevirtual #13                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+      43: lload         4
+      45: invokevirtual #14                 // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+      48: invokevirtual #15                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      51: invokevirtual #16                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      54: iconst_0
+      55: istore        7
+      57: iload         7
+      59: iload_1
+      60: if_icmpge     87
+      63: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      66: ldc           #17                 // String 四则运算: num1 * num4 =
+      68: invokevirtual #18                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+      71: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      74: iload_1
+      75: iload         6
+      77: imul
+      78: invokevirtual #19                 // Method java/io/PrintStream.println:(I)V
+      81: iinc          7, 1
+      84: goto          57
+      87: return
+}
