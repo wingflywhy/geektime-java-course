@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/geektime-java-course.iml" filepath="$PROJECT_DIR$/.idea/geektime-java-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geektime-java-course-allwork/geektime-java-course-allwork.iml" filepath="$PROJECT_DIR$/geektime-java-course-allwork/geektime-java-course-allwork.iml" />
       <module fileurl="file://$PROJECT_DIR$/geektime-java-course-weekone/geektime-java-course-weekone.iml" filepath="$PROJECT_DIR$/geektime-java-course-weekone/geektime-java-course-weekone.iml" />
       <module fileurl="file://$PROJECT_DIR$/geektime-java-course-weektwo/geektime-java-course-weektwo.iml" filepath="$PROJECT_DIR$/geektime-java-course-weektwo/geektime-java-course-weektwo.iml" />
     </modules>

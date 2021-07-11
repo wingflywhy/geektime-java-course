@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="geektime-java-course-allwork" />
         <module name="geektime-java-course-weekone" />
         <module name="geektime-java-course-weektwo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="geektime-java-course-allwork" target="1.8" />
       <module name="geektime-java-course-weekone" target="1.8" />
       <module name="geektime-java-course-weektwo" target="1.8" />
     </bytecodeTargetLevel>

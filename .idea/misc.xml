@@ -8,6 +8,8 @@
       <list>
         <option value="$PROJECT_DIR$/geektime-java-course-web/pom.xml" />
         <option value="$PROJECT_DIR$/geektime-java-course-weektwo/pom.xml" />
+        <option value="$PROJECT_DIR$/geektime-java-course-allwork/pom.xml" />
+        <option value="$PROJECT_DIR$/geektime-java-course-weekone/pom.xml" />
       </list>
     </option>
   </component>
